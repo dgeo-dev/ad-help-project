@@ -1,18 +1,19 @@
-import React from "react";
-import "../styles/saulieu.css";
-import { BsHandIndexThumb } from "react-icons/bs";
-import { GrLocation } from "react-icons/gr";
-import { GrIndicator } from "react-icons/gr";
-import Navbar from '../comps/Navbar';
+import React from 'react'
+import '../styles/saulieu.css'
+//import Navbar from '../comps/Navbar';
 import { NavLink } from "react-router-dom";
+import {BsHandIndexThumb}from 'react-icons/bs';
+import {GrLocation}from 'react-icons/gr';
+import {GrIndicator}from 'react-icons/gr';
 
 export default function home() {
   return (
-    <>
-      <div className=" gauche">
-      <Navbar />
-      <h1>Boutique</h1>  
-      <img src="map.jpg" alt="map" />
+    <div className='main'>
+      <h1>Ici navbar ?</h1>
+    {/* <Navbar /> */}
+    <div className='container'>
+      <div className='gauche'>
+        <img src="map.jpg" alt="map" />
         <section className="legende">
         <h3> Legende : </h3>
         <div className='point'>
@@ -49,6 +50,7 @@ export default function home() {
         </div>
       </section>
       </div>
+      
       <div className='droite'>
         <div className='paragraphe'>
           <h2> Boutique à Saulieu </h2>
@@ -81,6 +83,7 @@ export default function home() {
             <NavLink to="/#" className='ensavoirplus'> En savoir plus </NavLink>
         </div>
       </div>
-    </>
-  );
+    </div>
+   </div>
+  )
 }
